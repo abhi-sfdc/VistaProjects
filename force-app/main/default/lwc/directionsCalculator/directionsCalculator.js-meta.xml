@@ -1,0 +1,13 @@
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <!-- Add any other targets where you want to use this component -->
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="GoogleMapsAPI" type="String" label="AIzaSyANYZVpfrfkLU3t1E3udZiwz5ToPUFACnY"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

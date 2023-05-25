@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Directions Calculator">
+      <div class="slds-p-around_medium">
+        <lightning-input label="Origin Address" value={originAddress} onchange={handleOriginChange} onfocus={initializeAutocomplete}></lightning-input>
+        <lightning-input label="Destination Address" value={destinationAddress} onchange={handleDestinationChange} onfocus={initializeAutocomplete}></lightning-input>
+        <lightning-button label="Get Directions" onclick={getDirections}></lightning-button>
+        <template if:true={directionsResult}>
+          <div class="slds-m-top_medium">
+            <p>Distance: {directionsResult.distance}</p>
+            <p>Duration: {directionsResult.duration}</p>
+            <p>Cost of Travel: {directionsResult.cost}</p>
+          </div>
+        </template>
+      </div>
+    </lightning-card>
+  </template>
+  
